@@ -20,9 +20,9 @@ class autoChoose(object):
 
     def wxlogin(self):
         self.bot = Bot()
-        self.xc = self.bot.mps().search("校查")[0]
+        self.xc = self.bot.mps().search("插座校园")[0]
         self.bot.enable_puid('wxpy_puid.pkl')
-        #self.xc = self.bot.search(puid="f98059b9") #校查puid
+        #self.xc = self.bot.search(puid="f98059b9") #插座校园puid
 
         @self.bot.register(self.xc)
         def print_others(msg):
